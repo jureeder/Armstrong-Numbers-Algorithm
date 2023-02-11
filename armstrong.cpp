@@ -24,7 +24,7 @@ int main()
         int digit3 = 0;
         int digit4 = 0;
         
-        
+        //determining the number of digits
         if (j != 0) {
             ++numDigits;
             j = j/10;
@@ -45,6 +45,7 @@ int main()
             }
         }
         
+        //finding the value of each digit
         for (int g = 1; g < 5; g++) {
             int place = h % 10;
             h = h / 10;
@@ -67,7 +68,7 @@ int main()
         double sum = 0;
         sum = pow(digit1 , numDigits) + pow(digit2 , numDigits) + pow(digit3 , numDigits) + pow(digit4 , numDigits);
         
-
+        //determine if Armstrong number and print
         if (sum == i) {
             armstrong = true;
             cout<<i<<" is an Armstrong number!"<<endl;
