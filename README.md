@@ -17,5 +17,5 @@ Thus, 153 is an Armstrong number.
 
 Thus, 154 is not an Armstrong number.
 
-This algorithm tests every number from 0-10,000 to verify whether it is an Armstrong number.
+This C++ algorithm tests every number from 0-10,000 to verify whether it is an Armstrong number.
 -
