@@ -68,7 +68,7 @@ int main()
         double sum = 0;
         sum = pow(digit1 , numDigits) + pow(digit2 , numDigits) + pow(digit3 , numDigits) + pow(digit4 , numDigits);
         
-        //determine if Armstrong number and print
+        //determine the number is an Armstrong number and printing
         if (sum == i) {
             armstrong = true;
             cout<<i<<" is an Armstrong number!"<<endl;
