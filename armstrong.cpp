@@ -14,7 +14,6 @@ using namespace std;
 int main()
 {
     for (int i = 9999; i > -1; i--) {
-        //cout<<i<<endl;
         int numDigits = 0;
         bool armstrong = false;
         int j = i;
@@ -64,24 +63,9 @@ int main()
             }
         } 
         
-
+        //creating the sum based on the number of digits
         double sum = 0;
-
-        if (numDigits == 1) {
-            sum = pow(digit1 , numDigits);
-        }
-
-        else if (numDigits == 2) {
-            sum = pow(digit1 , numDigits) + pow(digit2 , numDigits);
-        }
-
-        else if (numDigits == 3) {
-            sum = pow(digit1 , numDigits) + pow(digit2 , numDigits) + pow(digit3 , numDigits);
-        }
-
-        else if (numDigits ==4) {
-            sum = pow(digit1 , numDigits) + pow(digit2 , numDigits) + pow(digit3 , numDigits) + pow(digit4 , numDigits);
-        }
+        sum = pow(digit1 , numDigits) + pow(digit2 , numDigits) + pow(digit3 , numDigits) + pow(digit4 , numDigits);
         
 
         if (sum == i) {
