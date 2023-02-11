@@ -19,3 +19,21 @@ Thus, 154 is not an Armstrong number.
 
 This C++ algorithm tests every number from 0-10,000 to verify whether it is an Armstrong number.
 -
+The full list of Armstrong numbers is:
+9474 
+8208 
+1634 
+407 
+371 
+370 
+153
+9 
+8 
+7
+6 
+5 
+4 
+3 
+2 
+1 
+0
