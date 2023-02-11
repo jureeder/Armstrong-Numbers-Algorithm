@@ -13,10 +13,6 @@ using namespace std;
 
 int main()
 {
-
-    //int i = 1116; //for testing
-    
-    //cout<<i<<endl; //for testing
     for (int i = 9999; i > -1; i--) {
         //cout<<i<<endl;
         int numDigits = 0;
@@ -34,30 +30,17 @@ int main()
             ++numDigits;
             j = j/10;
             
-            //cout<<j<<endl; //for testing
-            //cout<<"number of digits "<<numDigits<<endl; //for testing
-            
             if (j != 0) {
                 ++numDigits;
                 j = j/10;
-                
-                //cout<<j<<endl; //for testing
-                //cout<<"number of digits "<<numDigits<<endl; //for testing
                 
                 if (j != 0) {
                     ++numDigits;
                     j = j/10;
                     
-                    //cout<<j<<endl; //for testing
-                    //cout<<"number of digits "<<numDigits<<endl; //for testing
-                    
                     if (j != 0) {
                         ++numDigits;
-                        j = j/10;
-                        
-                        //cout<<j<<endl; //for testing
-                        //cout<<"number of digits "<<numDigits<<endl; //for testing
-                        
+                        j = j/10;  
                     }
                 }
             }
@@ -68,24 +51,19 @@ int main()
             h = h / 10;
         
             if (g == 1){
-                //cout << "Ones place value is: " << place << endl;
                 digit1 = place;
             }
             else if(g == 2){
-                //cout << "Tens place value is: " << place << endl;
                 digit2 = place;
             }
             else if(g == 3){
-                //cout << "Hundredths place value is: " << place << endl;
                 digit3 = place;
             }
             else if(g == 4){
-                //cout << "Thousands place value is: " << place << endl;
                 digit4 = place;
             }
         } 
         
-        //cout<<"number of digits "<<numDigits<<endl; //for testing
 
         double sum = 0;
 
@@ -105,19 +83,13 @@ int main()
             sum = pow(digit1 , numDigits) + pow(digit2 , numDigits) + pow(digit3 , numDigits) + pow(digit4 , numDigits);
         }
         
-       //cout<<"sum "<<sum<<endl;
 
         if (sum == i) {
             armstrong = true;
-        }
-
-        if (armstrong == true) {
             cout<<i<<" is an Armstrong number!"<<endl;
         }
 
     }
-    
-    
 
     return 0;
 }
