@@ -64,7 +64,7 @@ int main()
             }
         } 
         
-        //creating the sum based on the number of digits
+        //creating the sum
         double sum = 0;
         sum = pow(digit1 , numDigits) + pow(digit2 , numDigits) + pow(digit3 , numDigits) + pow(digit4 , numDigits);
         
