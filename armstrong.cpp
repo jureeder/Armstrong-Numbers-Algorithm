@@ -24,23 +24,9 @@ int main() {
         int digit4 = 0;
         
         //determining the number of digits
-        if (j != 0) {
+        while(j > 0) {
             ++numDigits;
-            j = j/10;
-            
-            if (j != 0) {
-                ++numDigits;
-                j = j/10;
-                
-                if (j != 0) {
-                    ++numDigits;
-                    j = j/10;
-                    
-                    if (j != 0) {
-                        ++numDigits; 
-                    }
-                }
-            }
+            j = j / 10;
         }
         
         //finding the value of each digit
