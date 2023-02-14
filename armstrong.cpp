@@ -11,11 +11,10 @@ Written by Juliette Reeder
 
 using namespace std;
 
-int main()
-{
+int main() {
+  
     for (int i = 9999; i > -1; i--) {
         int numDigits = 0;
-        bool armstrong = false;
         int j = i;
         int h = i;
         
@@ -38,8 +37,7 @@ int main()
                     j = j/10;
                     
                     if (j != 0) {
-                        ++numDigits;
-                        j = j/10;  
+                        ++numDigits; 
                     }
                 }
             }
@@ -70,10 +68,8 @@ int main()
         
         //determine the number is an Armstrong number and printing
         if (sum == i) {
-            armstrong = true;
             cout<<i<<" is an Armstrong number!"<<endl;
         }
     }
     return 0;
 }
-
